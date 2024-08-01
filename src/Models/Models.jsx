@@ -45,7 +45,7 @@ const BottomContainerPrice = styled.div`
   gap: 10px;
 `
 const CartDiv = styled.button`
-  background-color: orange;
+  background-color: rgb(255, 165, 0);
   color: white;
   display: flex;
   flex-direction: column;
@@ -71,9 +71,13 @@ const ContainerCard = styled.div`
   justify-content: center;
   align-items: center;
 `
+const SpanMsg = styled.span`
+  margin-top: 10px;
+`
+
 function Models(){
 
-  const { addItemToCart } = useContext(CartContext)
+  const { addItemToCart, cartItems } = useContext(CartContext)
 
   const handleAddToCart = (item) => {
     addItemToCart(item)
@@ -89,8 +93,9 @@ function Models(){
           </Link>
           <BottomContainerPrice>
             <DivPrice>80€</DivPrice>
-            <CartDiv onClick={() => {handleAddToCart({producto: "Invitacion1", price:80})}}><AddShoppingCartIcon/></CartDiv>  
+            <CartDiv id="invitacion1" onClick={() => {handleAddToCart({producto: "Invitacion1", price:80})}}><AddShoppingCartIcon/></CartDiv>  
           </BottomContainerPrice>  
+          {cartItems.length>0 && cartItems[0].producto === "Invitacion1" && <SpanMsg>Producto añadido al carrito</SpanMsg>}
         </ContainerCard>       
         <ContainerCard>
           <Link style={style} to="/invitacion2">
@@ -98,8 +103,9 @@ function Models(){
           </Link>
           <BottomContainerPrice>
             <DivPrice>80€</DivPrice>
-            <CartDiv onClick={() => {handleAddToCart({producto: "Invitacion2", price:80})}}><AddShoppingCartIcon/></CartDiv> 
+            <CartDiv id="invitacion2" onClick={() => {handleAddToCart({producto: "Invitacion2", price:80})}}><AddShoppingCartIcon/></CartDiv> 
           </BottomContainerPrice>  
+          {cartItems.length>0 && cartItems[0].producto === "Invitacion2" && <SpanMsg>Producto añadido al carrito</SpanMsg>}
         </ContainerCard>    
         <ContainerCard>
           <Link style={style} to="/invitacion3">
@@ -107,8 +113,9 @@ function Models(){
           </Link>
           <BottomContainerPrice>
             <DivPrice>90€</DivPrice>
-            <CartDiv onClick={() => {handleAddToCart({producto: "Invitacion3", price:90})}}><AddShoppingCartIcon/></CartDiv> 
+            <CartDiv id="invitacion3" onClick={() => {handleAddToCart({producto: "Invitacion3", price:90})}}><AddShoppingCartIcon/></CartDiv> 
           </BottomContainerPrice>
+          {cartItems.length>0 && cartItems[0].producto === "Invitacion3" && <SpanMsg>Producto añadido al carrito</SpanMsg>}
         </ContainerCard>     
         <ContainerCard>
           <Link style={style} to="/invitacion4">
@@ -116,8 +123,9 @@ function Models(){
           </Link>
           <BottomContainerPrice>
             <DivPrice>90€</DivPrice>
-            <CartDiv onClick={() => {handleAddToCart({producto: "Invitacion4", price:90})}}><AddShoppingCartIcon/></CartDiv> 
+            <CartDiv id="invitacion4" onClick={() => {handleAddToCart({producto: "Invitacion4", price:90})}}><AddShoppingCartIcon/></CartDiv> 
           </BottomContainerPrice>   
+          {cartItems.length>0 && cartItems[0].producto === "Invitacion4" && <SpanMsg>Producto añadido al carrito</SpanMsg>}
         </ContainerCard>
         <ContainerCard>
           <Link style={style} to="/invitacion5">
@@ -125,15 +133,17 @@ function Models(){
           </Link>
           <BottomContainerPrice>
             <DivPrice>90€</DivPrice>
-            <CartDiv onClick={() => {handleAddToCart({producto: "Invitacion5", price:90})}}><AddShoppingCartIcon/></CartDiv> 
+            <CartDiv id="invitacion5" onClick={() => {handleAddToCart({producto: "Invitacion5", price:90})}}><AddShoppingCartIcon/></CartDiv> 
           </BottomContainerPrice>   
+          {cartItems.length>0 && cartItems[0].producto === "Invitacion5" && <SpanMsg>Producto añadido al carrito</SpanMsg>}
         </ContainerCard>
         <ContainerCard>
           <Image src="../../personalizada.png" alt="personalizada"/>
           <BottomContainerPrice>
             <DivPrice>150€</DivPrice>
-            <CartDiv onClick={() => {handleAddToCart({producto: "personalizada", price:150})}}><AddShoppingCartIcon/></CartDiv> 
+            <CartDiv id="personalizada" onClick={() => {handleAddToCart({producto: "personalizada", price:150})}}><AddShoppingCartIcon/></CartDiv> 
           </BottomContainerPrice>   
+          {cartItems.length>0 && cartItems[0].producto === "personalizada" && <SpanMsg>Producto añadido al carrito</SpanMsg>}
         </ContainerCard>        
       </ContainerModels>
     </Container>

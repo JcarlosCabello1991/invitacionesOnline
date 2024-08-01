@@ -112,7 +112,10 @@ const ContainerQuantity = styled.div`
 const Quantity = styled.span`
   position: absolute;
   color: white;
-  font-size: 18px;
+  font-size: 13px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-family: 'Montserrat';
 `
 
 function Header(){
