@@ -91,7 +91,7 @@ function CheckoutForm(){
         <IntraForm>
           <span>
             Para contratar esta opción escribenos por email a:<br></br>
-            invitaciones.online@gmail.com<br></br>
+            invitaciones.online.info@gmail.com<br></br>
             o por whatsapp, indicanos la invitación que quieres,<br></br>
             nombres de los novios, si la invitacion tiene reproductor, 
             mandanos la canción, así como la/las fotos que quieras que aparezcan,
