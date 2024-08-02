@@ -12,7 +12,7 @@ function Banner(){
 
   return (
     <ContainerBanner>
-      <p>Plazo de entrega de la invitación 2 - 3 días, personalizadas 7 días</p>
+      <p>Plazo de entrega de la invitación 7 días laborales, personalizadas 14 días laborales</p>
       <span>Todas nuestras entregas disponen de una web para los novios, en la que pueden ver la información envíada por cada invitado, puedes ver una prueba haciendo click aquí</span>
     </ContainerBanner>
   );
