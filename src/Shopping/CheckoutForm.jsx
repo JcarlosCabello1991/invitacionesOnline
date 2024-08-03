@@ -83,15 +83,15 @@ function CheckoutForm(){
   }
 
   return(
-    <div style={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+    <div style={{width: '100%',display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
       <ContanerProduct>
         {cartItems.length > 0 && <ImageProduct src={imageProduct} alt={imageProduct}/>}
       </ContanerProduct>
       <ContainerForm>
         <IntraForm>
-          <span>
+          <span style={{width: '100%',maxWidth: `300px` }}>
             Para contratar esta opción escribenos por email a:<br></br>
-            invitaciones.online.info@gmail.com<br></br>
+            invitaciones.online.info @gmail.com<br></br>
             o por whatsapp, indicanos la invitación que quieres,<br></br>
             nombres de los novios, si la invitacion tiene reproductor, 
             mandanos la canción, así como la/las fotos que quieras que aparezcan,

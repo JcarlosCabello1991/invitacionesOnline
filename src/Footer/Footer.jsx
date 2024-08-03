@@ -8,14 +8,14 @@ const ContainerBanner = styled.div`
   font-size: 20px;
   padding: 0px 20px 20px 20px;
 `
-function Banner(){
+function Footer(){
 
   return (
     <ContainerBanner>
-      <p>Haz que tu día, sea único y especial</p>
-      <span>Eligiendo uno de nuestros modelos o personaliza uno a tu gusto!</span>
+      <p>Plazo de entrega de la invitación 7 días laborales, personalizadas 14 días laborales</p>
+      <span>Todas nuestras entregas disponen de una web para los novios, en la que pueden ver la información envíada por cada invitado</span>
     </ContainerBanner>
   );
 }
 
-export default Banner;
+export default Footer;
