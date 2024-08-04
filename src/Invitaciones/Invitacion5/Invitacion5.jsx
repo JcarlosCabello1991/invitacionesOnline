@@ -5,6 +5,7 @@ import Ceremonia from "./Ceremonia";
 import Formulario from "./Formulario";
 import ModalComponent from "./Modal/Modal";
 import ReactAudioPlayer from 'react-audio-player';
+import AdvancedDescripition from "../../Descriptions/AdvancedDescription";
 
 
 const Container = styled.div`
@@ -14,7 +15,6 @@ const Container = styled.div`
   align-items: center;
   margin-top: 50px;
 `
-
 const Image = styled.img`
   width: 100%;
   max-width: 430px;
@@ -122,6 +122,8 @@ function Invitacion5() {
       {
         showNotice && <ModalComponent setShowNotice={setShowNotice} showNotice={showNotice}/>
       }
+      <AdvancedDescripition model={"Green"}/>
+      <br></br>
       <Image src="../../../encabezado5.png" alt="encabezado1"/>
       <ImageSave src="../../../saveTheDateHaliRB.png" alt="encabezado2"/>
       <div style={{display: 'flex', justifyContent: 'center', width: 'auto'}}>

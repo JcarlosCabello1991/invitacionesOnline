@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Schedule from "./Schedule";
 import Ceremonia from "./Ceremonia";
 import Formulario from "./Formulario";
+import BasicDescription from "../../Descriptions/BasicDescription";
 
 
 const Container = styled.div`
@@ -108,6 +109,8 @@ function Invitacion2() {
 
   return(
     <Container>
+      <BasicDescription model={"Red"}/>
+      <br></br>
       <Image src="../../../encabezado2.png" alt="encabezado1"/>
       <ImageSave src="../../../saveTheDateRedRB.png" alt="encabezado2"/>
       <DivDate>
