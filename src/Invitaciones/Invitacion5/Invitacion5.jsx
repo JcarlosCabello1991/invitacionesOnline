@@ -6,6 +6,7 @@ import Formulario from "./Formulario";
 import ModalComponent from "./Modal/Modal";
 import ReactAudioPlayer from 'react-audio-player';
 import AdvancedDescripition from "../../Descriptions/AdvancedDescription";
+import { useLocation } from "react-router-dom";
 
 
 const Container = styled.div`
@@ -73,6 +74,12 @@ function Invitacion5() {
   });
   const [showNotice, setShowNotice] = useState(true);
   const audioRef = useRef(null);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const actualizarContador = () => {
     const ahora = new Date();

@@ -4,6 +4,7 @@ import Schedule from "./Schedule";
 import Ceremonia from "./Ceremonia";
 import Formulario from "./Formulario";
 import BasicDescription from "../../Descriptions/BasicDescription";
+import { useLocation } from "react-router-dom";
 
 
 const Container = styled.div`
@@ -69,6 +70,12 @@ function Invitacion1() {
     minutos:"",
     segundos:""
   });
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const actualizarContador = () => {
     const ahora = new Date();

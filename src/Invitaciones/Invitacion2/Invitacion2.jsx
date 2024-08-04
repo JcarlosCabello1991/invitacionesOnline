@@ -4,6 +4,7 @@ import Schedule from "./Schedule";
 import Ceremonia from "./Ceremonia";
 import Formulario from "./Formulario";
 import BasicDescription from "../../Descriptions/BasicDescription";
+import { useLocation } from "react-router-dom";
 
 
 const Container = styled.div`
@@ -62,6 +63,12 @@ const DateSpanWord = styled.span`
 function Invitacion2() {
 
   const fechaObjetivo = new Date('2025-07-12T13:00:00');
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const [date, setDate] = useState({
     dias: "",
