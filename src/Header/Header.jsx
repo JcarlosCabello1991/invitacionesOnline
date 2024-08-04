@@ -32,6 +32,7 @@ const Sections = styled.div`
 const Name = styled.span`
   min-width: fit-content;
   font-size: 30px;
+  cursor: pointer;
 `
 
 const Options = styled.div`
@@ -167,7 +168,7 @@ function Header(){
         windowWidth >= 500 
         ?
         <>
-          <Name>Invitaciones<NameStyle>Online</NameStyle></Name>
+          <Name onClick={() => {goTo("/")}}>Invitaciones<NameStyle>Online</NameStyle></Name>
           <Sections>
             <Options> 
               {selectedOption === "modelos" ? <Option onClick={() => {goTo("/")}}>Modelos</Option> : <Link style={style} to="/" onClick={()=>setSelectedOption("modelos")}>Modelos</Link>}
@@ -180,7 +181,7 @@ function Header(){
         </>
         :
         <>
-          <Name>Invitaciones<NameStyle>Online</NameStyle></Name>
+          <Name onClick={() => {goTo("/")}}>Invitaciones<NameStyle>Online</NameStyle></Name>
           <ContainerResponsive>
           <DivCart>
             <Link style={styleLink} to="/shopping"><ShoppingCartIcon/></Link>

@@ -61,7 +61,6 @@ const DateSpanWord = styled.span`
   width: 75px;
   text-align: center;
 `
-
 function Invitacion5() {
 
   const fechaObjetivo = new Date('2025-07-12T13:00:00');

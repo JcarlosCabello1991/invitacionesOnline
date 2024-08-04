@@ -27,6 +27,12 @@ const slideDown = keyframes`
   }
 `;
 
+const Span = styled.p`
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Montserrat';
+`
+
 const AnimatedBox = styled(Box)`
   animation: ${props => props.isClosing ? slideDown : slideUp} 0.5s ease-out forwards;
 `;
@@ -102,6 +108,7 @@ function ModalComponent(props){
             <Paragraph>
               Rachel y Morgan, quieren compartir esto contigo!
             </Paragraph>
+            <Span>Pop up incluido en la invitación</Span>
             <Button onClick={() => closeInvitacion()}>Abrir</Button>
           </>       
         }

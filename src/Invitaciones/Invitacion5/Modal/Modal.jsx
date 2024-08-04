@@ -68,7 +68,11 @@ const Button = styled.button`
   padding: 5px;
   font-family: 'Montserrat';
 `
-
+const Span = styled.p`
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Montserrat';
+`
 function ModalComponent(props){
 
   const {
@@ -102,6 +106,7 @@ function ModalComponent(props){
             <Paragraph>
               Rachel y Morgan, quieren compartir esto contigo!
             </Paragraph>
+            <Span>Pop up incluido en la invitación</Span>
             <Button onClick={() => closeInvitacion()}>Abrir</Button>
           </>       
         }
