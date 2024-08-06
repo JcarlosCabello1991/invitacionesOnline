@@ -12,6 +12,7 @@ import Invitacion5 from './Invitaciones/Invitacion5/Invitacion5';
 import { CartProvider } from './Context/CartContext';
 import Shopping from './Shopping/Shopping';
 import Footer from './Footer/Footer';
+import Personalizada from './Invitaciones/Personalizada/Personalizada';
 
 
 function App() {  
@@ -28,6 +29,7 @@ function App() {
             <Route path='/invitacion3' Component={Invitacion3}/>
             <Route path='/invitacion4' Component={Invitacion4}/>
             <Route path='/invitacion5' Component={Invitacion5}/>
+            <Route path='/personalizada' Component={Personalizada}/>
             <Route path='/shopping' Component={Shopping}/>
           </Routes>
           <Footer/>        

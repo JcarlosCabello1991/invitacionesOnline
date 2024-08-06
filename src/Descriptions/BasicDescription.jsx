@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import AskInfo from "./AskInfo";
 
 const Description = styled.div`
   width: 100%;
@@ -23,7 +24,8 @@ function BasicDescription({model}){
         - <strong>1 imagen del lugar del banquete,</strong> ideal para que vean el salon y se imaginen a vuestro lado<br></br>
         - <strong>Apertura de mapa con ubicación del banquete,</strong> para que sepan llegar y no quedarse con hambre<br></br>
         - <strong>Texto con Cuenta bancaria,</strong> pon algo gracioso para que no parezca que quieres su dinero, aunque sabemos que es así jejeje<br></br>
-        - <strong>Formulario,</strong> para controlar quien va o no a la boda, intolerancias, transporte y más
+        - <strong>Formulario,</strong> para controlar quien va o no a la boda, intolerancias, transporte y más<br></br>
+        <AskInfo/>
       </Description>
   )
 }

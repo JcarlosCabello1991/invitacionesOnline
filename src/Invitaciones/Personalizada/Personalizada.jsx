@@ -1,5 +1,6 @@
 import React from "react"
-
+import Customized from "../../Descriptions/Customized"
+import styled from "styled-components"
 
 
 const Container = styled.div`
@@ -14,49 +15,16 @@ const Image = styled.img`
   max-width: 430px;
   height: auto;
 `
-const ImageSave = styled.img`
-  width: 90%;
-  max-width: 400px;
-  height: auto;
-  margin-bottom: 10px;
-`
-
-const ImageBride = styled.img`
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  margin-top: 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-`
-
-const DivDate = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 400px;
-  gap: 10px;
-`
-
-const DateSpan = styled.span`
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 50px;
-  color: #454545;
-  width: 75px;
-  text-align: center;
-`
-const DateSpanWord = styled.span`
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  color: #454545;
-  width: 75px;
-  text-align: center;
-`
 
 function Personalizada() {
 
+  return(
+    <Container>
+      <Customized/>
+      <br></br>
+      <Image src="../../personalizada.png" alt="personalizada"/>
+    </Container>
+  )
 }
 
 export default Personalizada

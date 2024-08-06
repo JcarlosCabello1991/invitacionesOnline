@@ -212,13 +212,15 @@ function Models(){
           </BottomContainerPrice>   
         </ContainerCard>
         <ContainerCard>
-          <Image src="../../personalizada.png" alt="personalizada"/>
-          {
+          <Link style={style} to="/personalizada">
+            <Image src="../../personalizada.png" alt="personalizada"/>
+            {
               cartItems.length>0 && cartItems[0].producto === "personalizada" && showToast &&
               <ToastContainer show={showToast}>
                 ¡Producto añadido al carrito!
               </ToastContainer>
             }
+          </Link>
           <BottomContainerPrice>
             <DivPrice>150€</DivPrice>
             <CartDiv id="personalizada" onClick={() => {handleAddToCart({producto: "personalizada", price:150})}}><AddShoppingCartIcon/></CartDiv> 
